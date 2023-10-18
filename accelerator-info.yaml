@@ -1,0 +1,15 @@
+id: e4a93fc2-b723-4496-b724-ba9220cf7d81
+timestamp: 2023-10-18T07:58:56Z
+username: mnikolai@evoila.de
+source: TAP-GUI
+accelerator:
+  name: weatherforecast-steeltoe
+  source:
+    image: harbor.rr.evoila.digital/tap/tap-packages@sha256:e531fcd5b89d3c196fe4891bc6c9a98854f809991d24a2c144270205cdd6c280
+fragments:
+  - name: tap-workload
+    source:
+      image: harbor.rr.evoila.digital/tap/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+options:
+  applicationName: Mini-Sample
+  projectName: weatherforecast-steeltoe
